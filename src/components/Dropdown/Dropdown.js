@@ -61,26 +61,20 @@ function Dropdown({ isOpen, toggle }) {
     <SiderBar isOpen={isOpen} onClick={toggle}>
       <CloseIcon onClick={toggle} />
       <NavMenu>
+      <NavLink onClick={toggle} className="menu-item" to="about">
+          About Me
+        </NavLink>
         <NavLink onClick={toggle} className="menu-item" to="projects">
           Projects
         </NavLink>
-        <NavLink onClick={toggle} className="menu-item" to="about">
-          About Me
+        <NavLink onClick={toggle} className="menu-item" to="technologies">
+          Skills
         </NavLink>
         <NavLink onClick={toggle} className="menu-item" to="contact">
           Contact
         </NavLink>
       </NavMenu>
-      <NavBtn onClick={toggle}>
-        <a
-          className="btn PrimaryBtn"
-          href="https://www.linkedin.com/in/kumar-ummaleti-88a465230"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Resume
-        </a>
-      </NavBtn>
+      
     </SiderBar>
   );
 }
