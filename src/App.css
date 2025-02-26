@@ -1,0 +1,13 @@
+/* App.css */
+body {
+    background-color:#a09c9c;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh; 
+  }
+  
+  /* Additional styles */
+  * {
+    box-sizing: border-box;
+  }
+  
